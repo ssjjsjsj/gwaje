@@ -7,7 +7,7 @@ function draw() {
   background(0);
   stroke(0);
   fill(255);
-  strokeWeight(5);
+  strokeWeight(8);
   rectMode(CENTER);
   //1
   rect(100,250,200,500);
