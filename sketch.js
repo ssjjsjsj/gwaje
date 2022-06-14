@@ -39,6 +39,7 @@ function draw() {
   let mY = max(0, min(height-1, mouseY));
   
   previous[mX][mY] = 30000;
+ 
   
   let divX = map(mX, 0, width, 1.0, 5.0);
   let divY = map(mY, 0, height, 1.0, 5.0);
@@ -48,7 +49,13 @@ function draw() {
       
       if (mouseIsPressed === true) {
   
-        previous[mX][mY] =500000;
+        previous[mX][mY] = 50000;
+        previous[mY][mX] = 50000;
+        previous[10][mY] = 50000;
+        previous[790][mY] = 50000;
+        previous[mX][10] = 50000;
+        previous[mX][790] = 50000;
+   
         
       //  let damping = 0.3;
   }
